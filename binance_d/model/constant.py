@@ -57,6 +57,7 @@ class MatchRole:
     MAKER = "maker"
     TAKER = "taker"
 
+
 class DepthStep:
     STEP0 = "step0"
     STEP1 = "step1"
@@ -76,6 +77,7 @@ class TransferType:
     ROLL_OUT = "ROLL_OUT"
     INVALID = None
 
+
 class WorkingType:
     MARK_PRICE = "MARK_PRICE"
     CONTRACT_PRICE = "CONTRACT_PRICE"
@@ -86,12 +88,12 @@ class FuturesMarginType:
     ISOLATED = "ISOLATED"
     CROSSED = "CROSSED"
 
+
 class PositionSide:
     BOTH = "BOTH"
     LONG = "LONG"
     SHORT = "SHORT"
     INVALID = None
-
 
 
 class IncomeType:
@@ -102,6 +104,7 @@ class IncomeType:
     COMMISSION = "COMMISSION"
     INSURANCE_CLEAR = "INSURANCE_CLEAR"
     INVALID = None
+
 
 class UpdateTime:
     NORMAL = ""
