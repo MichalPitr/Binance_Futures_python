@@ -228,8 +228,7 @@ class RequestClient(object):
         return response[0]
 
     def post_order(self, symbol: 'str', side: 'OrderSide', ordertype: 'OrderType',
-                   timeInForce: 'TimeInForce' = TimeInForce.INVALID, quantity=None,
-                   # TODO qty changed type from float to notyng
+                   timeInForce: 'TimeInForce' = TimeInForce.INVALID, quantity: 'str' = None,
                    reduceOnly: 'boolean' = None, price: 'float' = None,
                    newClientOrderId: 'str' = None, stopPrice: 'float' = None,
                    workingType: 'WorkingType' = WorkingType.INVALID, closePosition: 'boolean' = None,

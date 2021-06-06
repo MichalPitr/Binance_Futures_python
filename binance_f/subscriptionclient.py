@@ -3,7 +3,9 @@ import urllib.parse
 from binance_f.constant.system import WebSocketDefine
 from binance_f.impl.websocketrequestimpl import WebsocketRequestImpl
 from binance_f.impl.websocketconnection import WebsocketConnection
-from binance_f.impl.websocketwatchdog import WebSocketWatchDog
+# from binance_f.impl.websocketwatchdog import WebSocketWatchDog
+from .impl.websocketwatchdog import WebSocketWatchDog
+
 from binance_f.impl.restapirequestimpl import RestApiRequestImpl
 from binance_f.model import *
 from binance_f.model.constant import *

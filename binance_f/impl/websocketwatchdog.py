@@ -6,6 +6,9 @@ from binance_f.impl.utils.timeservice import get_current_timestamp
 
 
 def watch_dog_job(*args):
+    """
+        for each subbed stream, checks if the last received payload is older than last_receive_time
+    """
     watch_dog_instance = args[0]
     for connection in watch_dog_instance.connection_list:
         if connection.state == ConnectionState.CONNECTED:

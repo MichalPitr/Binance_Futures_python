@@ -104,7 +104,7 @@ class IncomeType:
     INVALID = None
 
 class UpdateTime:
-    NORMAL = ""
+    NORMAL = "@500ms"
     FAST = "@100ms"
     REALTIME = "@0ms"
     INVALID = ""
