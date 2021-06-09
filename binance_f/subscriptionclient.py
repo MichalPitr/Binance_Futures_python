@@ -204,6 +204,7 @@ class SubscriptionClient(object):
         print(update_time)
         request = self.websocket_request_impl.subscribe_book_depth_event(symbol, limit, update_time, callback, error_handler)
         self.__create_connection(request)
+        return request
 
     def subscribe_diff_depth_event(self, symbol: 'str', callback, error_handler=None, update_time: 'UpdateTime' = UpdateTime.INVALID):
         """
