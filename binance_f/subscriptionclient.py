@@ -44,7 +44,7 @@ class SubscriptionClient(object):
         self.connections = list()
         self.uri = WebSocketDefine.Uri
         is_auto_connect = True
-        receive_limit_ms = 60000
+        receive_limit_ms = 10000
         connection_delay_failure = 1
         if "uri" in kwargs:
             self.uri = kwargs["uri"]
